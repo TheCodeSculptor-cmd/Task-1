@@ -1,0 +1,24 @@
+Task3.
+
+mkdir git-task
+cd git-task
+git init
+touch feature1.txt
+touch feature2.txt
+git add .
+git commit -m "Add feature1.txt and feature2.txt"
+git branch develop
+git branch feature1
+git branch feature2
+git checkout develop
+touch develop.txt
+git stash
+git checkout feature1
+touch new.txt
+git add new.txt
+git commit -m "Add new.txt in feature1 branch"
+git checkout develop
+git stash pop
+git add develop.txt
+git commit -m "Add develop.txt from stash"
+
